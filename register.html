@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+.reg-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(9, 136, 47);
+}
+th{
+    padding: 10px;
+    
+}
+</style>
+<body bgcolor="grey">
+<div class="reg-container">
+    <form action="register.php" method="POST">
+        <table>
+            <tr>
+                <th colspan="3"><p>Register</p></th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th><input type="text" name="name" id="name"></th>
+            </tr>
+            <tr>
+                <th>Login Id</th>
+                <th><input type="email" name="logusr" id="logid"></th>
+            </tr>
+            <tr> <th>Password</th>
+            <th><input type="password" name="logpass" id="logpassid"></th>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <th>
+                    <input type="radio" name="gender" id="genid">Male<br>
+                    <input type="radio" name="gender" >Female
+                </th>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <th><select>
+                    <option value="America">America</option> 
+                    <option value="Australia">Australia</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="Paksitan">Paksitan</option>
+                </select></th>
+            </tr>
+            <tr>
+                <th><input type="submit" value="Register"></th>
+                <th><input type="reset" value="Clear"></th>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
