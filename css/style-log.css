@@ -1,3 +1,4 @@
+/* css for login.html */
 body{
     font-family: 'Courier New', Courier, monospace;
     padding: 0;
@@ -40,6 +41,32 @@ input[type=submit]{
     transition: .7s;
 }
 input[type=submit]:hover{
+    transform: scale(1.1);
+    opacity: .6;
+}
+input[type=reset]{
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(10, 151, 33);
+    color: #fff;
+    cursor: pointer;
+    transition: .7s;
+}
+input[type=reset]:hover{
+    transform: scale(1.1);
+    opacity: .6;
+}
+.register{
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(10, 151, 33);
+    color: #fff;
+    cursor: pointer;
+    transition: .7s;
+}
+.register:hover{
     transform: scale(1.1);
     opacity: .6;
 }
